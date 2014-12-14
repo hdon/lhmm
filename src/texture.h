@@ -10,10 +10,10 @@ class TextureManager
 {
 	private:
 		GLuint *GL_TextureNames, NotFound;
-		int LoadTexture(char *filename);
+		int LoadTexture(const char *filename);
 
 	public:
-		TextureManager(int count, char **filenames);
+		TextureManager(int count, const char **filenames);
 		~TextureManager();
 
 		inline void Bind(int index) {operator[](index);};

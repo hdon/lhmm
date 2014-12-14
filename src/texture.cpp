@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-TextureManager::TextureManager(int count, char **filenames)
+TextureManager::TextureManager(int count, const char **filenames)
 {
 	// Load our missingimage image
 	printf("Loading \"data/textures/Missing.bmp\"...");
@@ -49,7 +49,7 @@ void TextureManager::operator[](int index)
 	glBindTexture(GL_TEXTURE_2D, GL_TextureNames[index]);
 }
 
-int TextureManager :: LoadTexture (char *filename)
+int TextureManager :: LoadTexture (const char *filename)
 {
 	GLuint retval;
 	SDL_Surface *sdlimage;

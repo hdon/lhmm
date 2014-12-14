@@ -1,6 +1,7 @@
 #include <string>
+#include <string.h>
 #include "hash.h"
-SpellHasher::SpellHasher (char * Salt)
+SpellHasher::SpellHasher (const char * Salt)
 {
     hashedsalt = 0;
     hashedsalt = Hash(Salt);

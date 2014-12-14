@@ -38,7 +38,7 @@ BlockField blocks;
 list<ServerPlayer *> clients;
 #define FRAMERATE 30
 
-char * textures[]=
+const char * textures[]=
 {
     "data/textures/pip.png",
     "we_have_no_texture_for_this_yet",

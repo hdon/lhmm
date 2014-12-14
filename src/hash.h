@@ -3,7 +3,7 @@
 class SpellHasher
 {
     public:
-        SpellHasher (char * Salt = "");
+        SpellHasher (const char * Salt = "");
         ~SpellHasher () {};
         unsigned long int Hash (const char * spell);
     private:
